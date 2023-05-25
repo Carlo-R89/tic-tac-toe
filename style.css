@@ -1,0 +1,172 @@
+/* GENERAL STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  background: url(img/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+}
+
+h1,
+h2 {
+  font-family: 'Jedi', sans-serif;
+  letter-spacing: 4px;
+  -webkit-text-stroke: yellow 1px;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  -webkit-text-stroke: yellow 1px;
+}
+
+img {
+  width: 0%;
+  height: 0%;
+  background-size: cover;
+  animation-name: example;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+input[type='text']:focus {
+  background-color: lightblue;
+}
+
+.global-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.players {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/*--------------------------------*/
+
+/* BOARD STYLE */
+.gameboard-container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gameboard {
+  height: 300px;
+  display: none;
+  grid-template: repeat(3, minmax(50px, 100px)) / repeat(3, minmax(50px, 100px));
+  background-color: #fff;
+}
+
+.gameboard-cell {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* --------------------------------*/
+
+/*BUTTONS STYLE */
+#reset-btn {
+  display: none;
+  background-color: #0000ff;
+  color: #fff;
+  font-family: 'Jedi', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
+
+#reset-btn:hover,
+.player button:hover {
+  background-color: #80a7d1;
+}
+
+.player button {
+  width: 60px;
+  height: 25px;
+  background-color: #0000ff;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+}
+
+#start-game {
+  height: 50px;
+  width: 300px;
+  background-color: #000;
+  color: #000;
+  font-family: 'Jedi', sans-serif;
+  font-size: 30px;
+  letter-spacing: 4px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  -webkit-text-stroke: yellow 1px;
+}
+
+#start-game:hover {
+  background-color: grey;
+  color: grey;
+}
+/*----------------------------------*/
+
+.pl-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#container1 h3 {
+  -webkit-text-stroke: lightskyblue 1px;
+}
+
+#container2 h3 {
+  -webkit-text-stroke: red 1px;
+}
+
+/*----------------------------------*/
+
+@font-face {
+  font-family: 'Jedi';
+  src: url(fonts/starjedi-webfont.woff) format('woff'),
+    url(fonts/starjedi-webfont.woff2) format('woff2');
+}
+
+@keyframes example {
+  from {
+    width: 0%;
+    height: 0%;
+  }
+  to {
+    width: 80%;
+    height: 80%;
+  }
+}

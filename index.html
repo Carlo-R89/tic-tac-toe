@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="global-wrapper">
+      <h1>Tic-Tac-Toe</h1>
+      <div class="players">
+        <div class="player" id="container1">
+          <label for="player1">Player 1:</label>
+          <input type="text" id="player1" class="player-input" />
+          <button id="player1-btn" class="player-btn">Play!</button>
+        </div>
+        <div class="player" id="container2">
+          <label for="player2">Player 2:</label>
+          <input type="text" id="player2" class="player-input" />
+          <button id="player2-btn" class="player-btn">Play!</button>
+        </div>
+      </div>
+      <div class="gameboard-container">
+        <button id="start-game">Start Game</button>
+        <div class="gameboard">
+          <div id="0" class="gameboard-cell"></div>
+          <div id="1" class="gameboard-cell"></div>
+          <div id="2" class="gameboard-cell"></div>
+          <div id="3" class="gameboard-cell"></div>
+          <div id="4" class="gameboard-cell"></div>
+          <div id="5" class="gameboard-cell"></div>
+          <div id="6" class="gameboard-cell"></div>
+          <div id="7" class="gameboard-cell"></div>
+          <div id="8" class="gameboard-cell"></div>
+        </div>
+        <div class="message"></div>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
